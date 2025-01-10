@@ -16,7 +16,7 @@ export default function Nav() {
   if (!pathname) return null;
   return (
     <div
-      className={classNames("fixed top-0 left-0 right-0 bg-gray-100", {
+      className={classNames("fixed top-0 left-0 right-0 z-20 bg-gray-100", {
         hidden: ["/login", "/welcome"].includes(pathname),
       })}>
       <div className="w-[1440px] flex flex-rows justify-between px-[100px] py-[20px] mx-auto ">
