@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import React from "react";
-interface MainButtonProps extends React.InputHTMLAttributes<HTMLInputElement> {
+interface MainButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   state: "active" | "default" | "off";
   setState: (state: "active" | "default" | "off") => void;
   content: string;
@@ -16,8 +16,8 @@ export default function Mainbutton({
   state,
   setState,
   content,
+  ...props 
 }: MainButtonProps) {
-
   const handleMouseEnter = () => {
     if (state === "default") {
       setState("active");
@@ -31,14 +31,15 @@ export default function Mainbutton({
   };
 
   const bigDivClasses = classNames(
-    `px-4 py-3.5 text-lg font-semibold  rounded-lg flex justify-center items-center`,
+    `px-4 py-3.5 w-full text-lg font-semibold  rounded-lg flex justify-center items-center`,
     classes[state]
   );
   return (
     <button
       className={bigDivClasses}
       onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}>
+      onMouseLeave={handleMouseLeave}
+      {...props}>
       {content}
     </button>
   );

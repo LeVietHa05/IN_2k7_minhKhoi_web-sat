@@ -45,7 +45,7 @@ export default function About() {
           </div>
         </div>
         <div className="flex gap-20 items-center justify-evenly">
-          <div className="w-[480px] h-[442px] group bg-indigo-50 rounded-3xl p-8 flex flex-col justify-center hover:justify-between items-center">
+          <div className="w-[480px] h-[442px] group bg-indigo-50 rounded-3xl p-8 flex flex-col justify-center hover:justify-between items-center hover:shadow-lg">
             <Image
               src={"./ebrw-main.svg"}
               width={259}
@@ -58,14 +58,15 @@ export default function About() {
             <div className="text-lg text-gray-500 hidden group-hover:block transition-all">
               <span className="text-indigo-500 font-medium">Reading Test:</span>{" "}
               Read and understand the passages and answer related questions.{" "}
-              <br /><br />{" "}
+              <br />
+              <br />{" "}
               <span className="text-indigo-500 font-medium">
                 Writing and Language Test:
               </span>{" "}
               Edit text to improve grammar, sentence structure, and meaning.
             </div>
           </div>
-          <div className="w-[480px] h-[442px] group bg-indigo-50 rounded-3xl p-8 flex flex-col justify-center hover:justify-between items-center">
+          <div className="w-[480px] h-[442px] group bg-indigo-50 rounded-3xl p-8 flex flex-col justify-center hover:justify-between items-center hover:shadow-lg">
             <Image
               src={"./math-main.svg"}
               width={259}
@@ -81,8 +82,9 @@ export default function About() {
               </span>{" "}
               one where computers are not allowed and one where computers are
               allowed.
-              <br /> <br />Content includes algebra, data analysis, and some advanced
-              math concepts.
+              <br /> <br />
+              Content includes algebra, data analysis, and some advanced math
+              concepts.
             </div>
           </div>
         </div>
