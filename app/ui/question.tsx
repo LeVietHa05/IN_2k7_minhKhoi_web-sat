@@ -8,12 +8,16 @@ interface QuestionProps {
   imageUrl: string;
   answers: { text: string; isCorrect: boolean }[];
   onAnswerSelected: (index: number) => void;
+  selectedAnswer: number | null;
+  questionIndex: number;
 }
 
 const Question: React.FC<QuestionProps> = ({
   imageUrl,
   answers,
   onAnswerSelected,
+  selectedAnswer,
+  questionIndex,
 }) => {
   return (
     <div className="p-4 border rounded mb-4 bg-gray-50 flex">
@@ -29,7 +33,9 @@ const Question: React.FC<QuestionProps> = ({
           <Answer
             key={index}
             content={answer.text}
+            isSelected={selectedAnswer === index}
             onSelect={() => onAnswerSelected(index)}
+            name={`question-${questionIndex}`}
           />
         ))}
       </div>

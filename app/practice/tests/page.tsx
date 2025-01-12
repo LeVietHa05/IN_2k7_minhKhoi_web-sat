@@ -90,7 +90,9 @@ export default function Test() {
             answers={question.answer}
             onAnswerSelected={(answerIndex) =>
               handleSelectAnswer(index, answerIndex)
-            }></Question>
+            }
+            selectedAnswer={selectedAnswers[index]}
+            questionIndex={index}></Question>
         );
       })}
       <SubmitButton
