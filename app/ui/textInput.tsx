@@ -41,8 +41,8 @@ export default function Textinput({
       <div className="flex items-center relative group pt-2.5">
         <span className={spanClass}>{label}</span>
         {React.Children.map(children, (child) => {
-          if (React.isValidElement(child)) {
-            return React.cloneElement(child, {
+          if (React.isValidElement<HTMLInputElement>(child)) {
+            return React.cloneElement<HTMLInputElement>(child, {
               className: inputClass,
             });
           }
