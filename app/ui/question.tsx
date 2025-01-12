@@ -20,11 +20,14 @@ const Question: React.FC<QuestionProps> = ({
   questionIndex,
 }) => {
   return (
-    <div className="p-4 border rounded mb-4 bg-gray-50 flex">
+    <div className="border rounded  bg-gray-50 flex">
+      <div className="ml-4 mr-8 mt-4 shadow-md w-[38px] h-[38px] rounded-full flex justify-center items-center bg-white">
+        {questionIndex + 1}
+      </div>
       <Image
         src={imageUrl}
         alt="Question"
-        className="mb-4"
+        className="mb-4 mr-[26px]"
         width={510}
         height={350}
       />
