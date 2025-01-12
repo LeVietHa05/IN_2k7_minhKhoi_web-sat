@@ -89,7 +89,7 @@ export default function Pratice() {
     return <p>Loading...</p>;
   }
   const handleButton = () => {
-    router.push("/pratice/test");
+    router.push("/practice/tests");
   };
 
   return (

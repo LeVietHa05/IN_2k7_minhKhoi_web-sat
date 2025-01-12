@@ -77,7 +77,7 @@ export default function Footer() {
         <div>© 2077 SATBuddy. All rights reserved.</div>
         <div>
           <Image
-            src={"./footer-logo-icon.svg"}
+            src={"/footer-logo-icon.svg"}
             width={264}
             height={24}
             alt="icon"></Image>
