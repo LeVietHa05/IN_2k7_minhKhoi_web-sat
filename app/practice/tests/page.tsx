@@ -9,44 +9,270 @@ const questions1 = [
     id: 1,
     imageUrl: "/question/1.png",
     answer: [
-      {
-        text: "A",
-        isCorrect: false,
-      },
-      {
-        text: "B",
-        isCorrect: true,
-      },
-      {
-        text: "C",
-        isCorrect: false,
-      },
-      {
-        text: "D",
-        isCorrect: false,
-      },
+      { text: "A", isCorrect: true },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: false },
     ],
   },
   {
     id: 2,
-    imageUrl: "/question/1.png",
+    imageUrl: "/question/2.png",
     answer: [
-      {
-        text: "A",
-        isCorrect: true,
-      },
-      {
-        text: "B",
-        isCorrect: false,
-      },
-      {
-        text: "C",
-        isCorrect: false,
-      },
-      {
-        text: "D",
-        isCorrect: false,
-      },
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: true },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: false },
+    ],
+  },
+  {
+    id: 3,
+    imageUrl: "/question/3.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: true },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: false },
+    ],
+  },
+  {
+    id: 4,
+    imageUrl: "/question/4.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: true },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: false },
+    ],
+  },
+  {
+    id: 5,
+    imageUrl: "/question/5.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: true },
+    ],
+  },
+  {
+    id: 6,
+    imageUrl: "/question/6.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: true },
+    ],
+  },
+  {
+    id: 7,
+    imageUrl: "/question/7.png",
+    answer: [
+      { text: "A", isCorrect: true },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: false },
+    ],
+  },
+  {
+    id: 8,
+    imageUrl: "/question/8.png",
+    answer: [
+      { text: "A", isCorrect: true },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: false },
+    ],
+  },
+  {
+    id: 9,
+    imageUrl: "/question/9.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: true },
+    ],
+  },
+  {
+    id: 10,
+    imageUrl: "/question/10.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: true },
+    ],
+  },
+  {
+    id: 11,
+    imageUrl: "/question/11.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: true },
+      { text: "D", isCorrect: false },
+    ],
+  },
+  {
+    id: 12,
+    imageUrl: "/question/12.png",
+    answer: [
+      { text: "A", isCorrect: true },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: false },
+    ],
+  },
+  {
+    id: 13,
+    imageUrl: "/question/13.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: true },
+    ],
+  },
+  {
+    id: 14,
+    imageUrl: "/question/14.png",
+    answer: [
+      { text: "A", isCorrect: true },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: false },
+    ],
+  },
+  {
+    id: 15,
+    imageUrl: "/question/15.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: true },
+      { text: "D", isCorrect: false },
+    ],
+  },
+  {
+    id: 16,
+    imageUrl: "/question/16.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: true },
+    ],
+  },
+  {
+    id: 17,
+    imageUrl: "/question/17.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: true },
+      { text: "D", isCorrect: false },
+    ],
+  },
+  {
+    id: 18,
+    imageUrl: "/question/18.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: true },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: false },
+    ],
+  },
+  {
+    id: 19,
+    imageUrl: "/question/19.png",
+    answer: [
+      { text: "A", isCorrect: true },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: false },
+    ],
+  },
+  {
+    id: 20,
+    imageUrl: "/question/20.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: true },
+      { text: "D", isCorrect: false },
+    ],
+  },
+  {
+    id: 21,
+    imageUrl: "/question/21.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: true },
+    ],
+  },
+  {
+    id: 22,
+    imageUrl: "/question/22.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: true },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: false },
+    ],
+  },
+  {
+    id: 23,
+    imageUrl: "/question/23.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: true },
+    ],
+  },
+  {
+    id: 24,
+    imageUrl: "/question/24.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: true },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: false },
+    ],
+  },
+  {
+    id: 25,
+    imageUrl: "/question/25.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: true },
+      { text: "D", isCorrect: false },
+    ],
+  },
+  {
+    id: 26,
+    imageUrl: "/question/26.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: true },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: false },
+    ],
+  },
+  {
+    id: 27,
+    imageUrl: "/question/27.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: true },
+      { text: "D", isCorrect: false },
     ],
   },
 ];
@@ -54,46 +280,212 @@ const questions1 = [
 const questions2 = [
   {
     id: 1,
-    imageUrl: "/question/2.png",
+    imageUrl: "/question2/1.png",
     answer: [
-      {
-        text: "A",
-        isCorrect: false,
-      },
-      {
-        text: "B",
-        isCorrect: true,
-      },
-      {
-        text: "C",
-        isCorrect: false,
-      },
-      {
-        text: "D",
-        isCorrect: false,
-      },
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: true },
     ],
   },
   {
     id: 2,
-    imageUrl: "/question/2.png",
+    imageUrl: "/question2/2.png",
     answer: [
-      {
-        text: "A",
-        isCorrect: true,
-      },
-      {
-        text: "B",
-        isCorrect: false,
-      },
-      {
-        text: "C",
-        isCorrect: false,
-      },
-      {
-        text: "D",
-        isCorrect: false,
-      },
+      { text: "A", isCorrect: true },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: false },
+    ],
+  },
+  {
+    id: 3,
+    imageUrl: "/question2/3.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: true },
+      { text: "D", isCorrect: false },
+    ],
+  },
+  {
+    id: 4,
+    imageUrl: "/question2/4.png",
+    answer: [
+      { text: "20", isCorrect: false },
+      { text: "14", isCorrect: false },
+      { text: "2", isCorrect: false },
+      { text: "11", isCorrect: true },
+    ],
+  },
+  {
+    id: 5,
+    imageUrl: "/question2/5.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: true },
+      { text: "D", isCorrect: false },
+    ],
+  },
+  {
+    id: 6,
+    imageUrl: "/question2/6.png",
+    answer: [
+      { text: "9", isCorrect: false },
+      { text: "10", isCorrect: true },
+      { text: "11", isCorrect: false },
+      { text: "12", isCorrect: false },
+    ],
+  },
+  {
+    id: 7,
+    imageUrl: "/question2/7.png",
+    answer: [
+      { text: "A", isCorrect: true },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: false },
+    ],
+  },
+  {
+    id: 8,
+    imageUrl: "/question2/8.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: true },
+    ],
+  },
+  {
+    id: 9,
+    imageUrl: "/question2/9.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: true },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: false },
+    ],
+  },
+  {
+    id: 10,
+    imageUrl: "/question2/10.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: true },
+    ],
+  },
+  {
+    id: 11,
+    imageUrl: "/question2/11.png",
+    answer: [
+      { text: "10 & -10", isCorrect: false },
+      { text: "20 & -20", isCorrect: false },
+      { text: "30 & -30", isCorrect: true },
+      { text: "40 & -40", isCorrect: false },
+    ],
+  },
+  {
+    id: 12,
+    imageUrl: "/question2/12.png",
+    answer: [
+      { text: "54.1", isCorrect: false },
+      { text: "1.54", isCorrect: false },
+      { text: "5.41", isCorrect: false },
+      { text: "4.51", isCorrect: true },
+    ],
+  },
+  {
+    id: 13,
+    imageUrl: "/question2/13.png",
+    answer: [
+      { text: "A", isCorrect: true },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: false },
+    ],
+  },
+  {
+    id: 14,
+    imageUrl: "/question2/14.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: true },
+    ],
+  },
+  {
+    id: 15,
+    imageUrl: "/question2/15.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: true },
+    ],
+  },
+  {
+    id: 16,
+    imageUrl: "/question2/16.png",
+    answer: [
+      { text: "4052", isCorrect: false },
+      { text: "4025", isCorrect: false },
+      { text: "4502", isCorrect: false },
+      { text: "4205", isCorrect: true },
+    ],
+  },
+  {
+    id: 17,
+    imageUrl: "/question2/17.png",
+    answer: [
+      { text: "18", isCorrect: true },
+      { text: "19", isCorrect: false },
+      { text: "20", isCorrect: false },
+      { text: "21", isCorrect: false },
+    ],
+  },
+  {
+    id: 18,
+    imageUrl: "/question2/18.png",
+    answer: [
+      { text: "A", isCorrect: true },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: false },
+    ],
+  },
+  {
+    id: 19,
+    imageUrl: "/question2/19.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: true },
+    ],
+  },
+  {
+    id: 20,
+    imageUrl: "/question2/20.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: true },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: false },
+    ],
+  },
+  {
+    id: 21,
+    imageUrl: "/question2/21.png",
+    answer: [
+      { text: "A", isCorrect: false },
+      { text: "B", isCorrect: false },
+      { text: "C", isCorrect: false },
+      { text: "D", isCorrect: true },
     ],
   },
 ];

@@ -49,8 +49,9 @@ export default function Answer({
         checked={isSelected}
         onChange={onSelect}
       />
-      Answer{" "}
-      <div className="ml-2 w-8 h-8 border border-gray-200 bg-gray-100 text-gray-700 text-xl font-medium rounded-full flex justify-center items-center">
+          { content.length <= 2 ? 'Answer' : ""}
+      <div
+        className={`ml-2 ${content.length > 2 ? 'w-full' : 'w-8'} h-8 border border-gray-200 bg-gray-100 text-gray-700 text-xl font-medium rounded-full flex justify-center items-center`}>
         {content}
       </div>
     </label>
