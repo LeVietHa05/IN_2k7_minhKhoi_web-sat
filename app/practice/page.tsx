@@ -19,17 +19,17 @@ const bookData = [
     type: "Study materials",
     list: [
       {
-        imgLink: "/book1.svg",
+        imgLink: "/book1.png",
         width: 300,
         height: 406,
       },
       {
-        imgLink: "/book2.svg",
+        imgLink: "/book2.png",
         width: 300,
         height: 406,
       },
       {
-        imgLink: "/book3.svg",
+        imgLink: "/book3.png",
         width: 300,
         height: 406,
       },
@@ -39,12 +39,12 @@ const bookData = [
     type: "Practice Questions",
     list: [
       {
-        imgLink: "/book4.svg",
+        imgLink: "/book4.png",
         width: 300,
         height: 406,
       },
       {
-        imgLink: "/book5.svg",
+        imgLink: "/book5.png",
         width: 300,
         height: 406,
       },
