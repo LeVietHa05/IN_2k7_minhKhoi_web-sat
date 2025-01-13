@@ -595,7 +595,7 @@ export default function Test() {
                     width={32}
                     height={32}
                     alt=""></Image>
-                  <div>23ques</div>
+                  <div>27ques</div>
                 </div>
               </div>
             </div>
@@ -624,7 +624,7 @@ export default function Test() {
                     width={32}
                     height={32}
                     alt=""></Image>
-                  <div>23ques</div>
+                  <div>21ques</div>
                 </div>
               </div>
             </div>
@@ -632,34 +632,106 @@ export default function Test() {
         </div>
       </div>
       <div>
-        {activeQuiz === "quiz1" &&
-          questions1.map((question, index) => {
-            return (
-              <Question
-                key={question.id}
-                imageUrl={question.imageUrl}
-                answers={question.answer}
-                onAnswerSelected={(answerIndex) =>
-                  handleSelectAnswer1(index, answerIndex)
-                }
-                selectedAnswer={quiz1Answer[index]}
-                questionIndex={index}></Question>
-            );
-          })}
-        {activeQuiz === "quiz2" &&
-          questions2.map((question, index) => {
-            return (
-              <Question
-                key={question.id}
-                imageUrl={question.imageUrl}
-                answers={question.answer}
-                onAnswerSelected={(answerIndex) =>
-                  handleSelectAnswer2(index, answerIndex)
-                }
-                selectedAnswer={quiz2Answer[index]}
-                questionIndex={index}></Question>
-            );
-          })}
+        <div className="overflow-y-auto max-h-[70vh]">
+          {activeQuiz === "quiz1" &&
+            questions1.map((question, index) => {
+              return (
+                <div key={question.id} className="relative">
+                  <div
+                    className={`flex gap-2 justify-center items-center absolute p-2 pt-5 text-green-500 text-2xl font-semibold inset-x-0 top-0 ${
+                      quiz1Answer[index] !== null &&
+                      question.answer[quiz1Answer[index]].isCorrect &&
+                      isSummited
+                        ? ""
+                        : "hidden"
+                    }`}>
+                    <div>Correct</div>
+                    <div>
+                      <Image
+                        src={"/tick-circle.png"}
+                        width={40}
+                        height={40}
+                        alt=""></Image>
+                    </div>
+                  </div>
+                  <div
+                    className={`flex gap-2 justify-center items-center absolute p-2 pt-5 text-red-500 text-2xl font-semibold inset-x-0 top-0 ${
+                      quiz1Answer[index] !== null &&
+                      !question.answer[quiz1Answer[index]].isCorrect &&
+                      isSummited
+                        ? ""
+                        : "hidden"
+                    }`}>
+                    <div>Wrong</div>
+                    <div>
+                      <Image
+                        src={"/close-circle.png"}
+                        width={40}
+                        height={40}
+                        alt=""></Image>
+                    </div>
+                  </div>
+                  <Question
+                    imageUrl={question.imageUrl}
+                    answers={question.answer}
+                    onAnswerSelected={(answerIndex) =>
+                      handleSelectAnswer1(index, answerIndex)
+                    }
+                    selectedAnswer={quiz1Answer[index]}
+                    questionIndex={index}></Question>
+                </div>
+              );
+            })}
+          {activeQuiz === "quiz2" &&
+            questions2.map((question, index) => {
+              return (
+                <div key={question.id} className="relative">
+                  <div
+                    className={`flex gap-2 justify-center items-center absolute p-2 pt-5 text-green-500 text-2xl font-semibold inset-x-0 top-0 ${
+                      quiz1Answer[index] !== null &&
+                      question.answer[quiz1Answer[index]].isCorrect &&
+                      isSummited
+                        ? ""
+                        : "hidden"
+                    }`}>
+                    <div>Correct</div>
+                    <div>
+                      <Image
+                        src={"/tick-circle.png"}
+                        width={40}
+                        height={40}
+                        alt=""></Image>
+                    </div>
+                  </div>
+                  <div
+                    className={`flex gap-2 justify-center items-center absolute p-2 pt-5 text-red-500 text-2xl font-semibold inset-x-0 top-0 ${
+                      quiz1Answer[index] !== null &&
+                      !question.answer[quiz1Answer[index]].isCorrect &&
+                      isSummited
+                        ? ""
+                        : "hidden"
+                    }`}>
+                    <div>Wrong</div>
+                    <div>
+                      <Image
+                        src={"/close-circle.png"}
+                        width={40}
+                        height={40}
+                        alt=""></Image>
+                    </div>
+                  </div>
+                  <Question
+                    imageUrl={question.imageUrl}
+                    answers={question.answer}
+                    onAnswerSelected={(answerIndex) =>
+                      handleSelectAnswer2(index, answerIndex)
+                    }
+                    selectedAnswer={quiz2Answer[index]}
+                    questionIndex={index}></Question>
+                </div>
+              );
+            })}
+        </div>
         <SubmitButton
           onClick={handleSubmit}
           disabled={quiz1Answer.includes(null) || quiz2Answer.includes(null)}
