@@ -2,15 +2,15 @@
 "use client";
 
 // import Image from "next/image";
-import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
-import Cookies from "js-cookie";
+// import { useEffect, useState } from "react";
+// import { useRouter } from "next/navigation";
+// import Cookies from "js-cookie";
 import Image from "next/image";
-interface Session {
-  email: string;
-  iat: number;
-  exp: number;
-}
+// interface Session {
+//   email: string;
+//   iat: number;
+//   exp: number;
+// }
 
 const QualityCommitment = [
   {
@@ -57,38 +57,38 @@ const someonelikeyou = [
   },
 ];
 export default function Home() {
-  const [session, setSession] = useState<Session | null>(null);
-
-  const router = useRouter();
-
-  useEffect(() => {
-    const token = Cookies.get("token");
-    // const token = localStorage.getItem("token");
-
-    if (!token) {
-      router.push("/login");
-    }
-
-    if (token) {
-      fetch("/api/session", {
-        headers: {
-          token,
-        },
-      })
-        .then((res) => res.json())
-        .then((data) => {
-          if (data.session) {
-            setSession(data.session);
-          } else {
-            router.push("/login");
-          }
-        });
-    }
-  }, [router]);
-
-  if (!session) {
-    return <p>Loading...</p>;
-  }
+//   const [session, setSession] = useState<Session | null>(null);
+// 
+//   const router = useRouter();
+// 
+//   useEffect(() => {
+//     const token = Cookies.get("token");
+//     // const token = localStorage.getItem("token");
+// 
+//     if (!token) {
+//       router.push("/login");
+//     }
+// 
+//     if (token) {
+//       fetch("/api/session", {
+//         headers: {
+//           token,
+//         },
+//       })
+//         .then((res) => res.json())
+//         .then((data) => {
+//           if (data.session) {
+//             setSession(data.session);
+//           } else {
+//             router.push("/login");
+//           }
+//         });
+//     }
+//   }, [router]);
+// 
+//   if (!session) {
+//     return <p>Loading...</p>;
+//   }
   return (
     <div className="p-20">
       <div className="flex ">

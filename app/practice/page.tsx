@@ -2,17 +2,17 @@
 "use client";
 
 // import Image from "next/image";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Mainbutton from "../ui/mainButton";
-import Cookies from "js-cookie";
+// import Cookies from "js-cookie";
 import Books from "../ui/books";
-interface Session {
-  email: string;
-  iat: number;
-  exp: number;
-}
+// interface Session {
+//   email: string;
+//   iat: number;
+//   exp: number;
+// }
 
 const bookData = [
   {
@@ -53,41 +53,41 @@ const bookData = [
 ];
 
 export default function Pratice() {
-  const [session, setSession] = useState<Session | null>(null);
+  // const [session, setSession] = useState<Session | null>(null);
   const [buttonState, setButtonState] = useState<"active" | "default" | "off">(
     "default"
   );
-
+// 
   const router = useRouter();
-
-  useEffect(() => {
-    const token = Cookies.get("token");
-    // const token = localStorage.getItem("token");
-
-    if (!token) {
-      router.push("/login");
-    }
-
-    if (token) {
-      fetch("/api/session", {
-        headers: {
-          token,
-        },
-      })
-        .then((res) => res.json())
-        .then((data) => {
-          if (data.session) {
-            setSession(data.session);
-          } else {
-            router.push("/login");
-          }
-        });
-    }
-  }, [router]);
-
-  if (!session) {
-    return <p>Loading...</p>;
-  }
+// 
+//   useEffect(() => {
+//     const token = Cookies.get("token");
+//     // const token = localStorage.getItem("token");
+// 
+//     if (!token) {
+//       router.push("/login");
+//     }
+// 
+//     if (token) {
+//       fetch("/api/session", {
+//         headers: {
+//           token,
+//         },
+//       })
+//         .then((res) => res.json())
+//         .then((data) => {
+//           if (data.session) {
+//             setSession(data.session);
+//           } else {
+//             router.push("/login");
+//           }
+//         });
+//     }
+//   }, [router]);
+// 
+//   if (!session) {
+//     return <p>Loading...</p>;
+//   }
   const handleButton = () => {
     router.push("/practice/tests");
   };
