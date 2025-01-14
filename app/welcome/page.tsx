@@ -20,7 +20,7 @@ const WelcomePage: React.FC = () => {
   return (
     <div className=" h-screen">
       <div className="flex items-center justify-center p-4">
-        <Image src={"/SATBuddy.png"} width={188} height={58} alt="logo"></Image>
+        <Image src={"/SATHub.png"} width={188} height={58} alt="logo"></Image>
       </div>
       <div className="flex flex-col justify-center items-center p-4 h-1/2 mb-10 bg-[url('/welcomeBG.png')] bg-contain bg-no-repeat bg-center">
         <div className="flex items-center justify-center p-4 ">

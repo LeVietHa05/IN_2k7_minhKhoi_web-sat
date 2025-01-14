@@ -23,7 +23,7 @@ export default function Nav() {
         <div className="flex flex-rows">
           <div className="flex items-center">
             <Image
-              src={"/SATBuddy.png"}
+              src={"/SATHub.png"}
               width={188}
               height={58}
               alt="logo"></Image>

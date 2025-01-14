@@ -35,7 +35,7 @@ export default function Footer() {
         <div className="w-[320px]">
           <div>
             <Image
-              src={"/SATBuddy.png"}
+              src={"/SATHub.png"}
               width={188}
               height={58}
               alt="logo"></Image>
@@ -74,7 +74,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="py-12 flex justify-between w-full">
-        <div>© 2077 SATBuddy. All rights reserved.</div>
+        <div>© 2077 SATHub. All rights reserved.</div>
         <div>
           <Image
             src={"/footer-logo-icon.svg"}

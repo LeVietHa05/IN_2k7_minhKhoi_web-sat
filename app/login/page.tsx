@@ -52,7 +52,7 @@ export default function LoginPage() {
   return (
     <div className="p-20 ">
       <div className="flex items-center justify-center p-4 ">
-        <Image src={"/SATBuddy.png"} width={188} height={58} alt="logo"></Image>
+        <Image src={"/SATHub.png"} width={188} height={58} alt="logo"></Image>
       </div>
 
       <div className="flex justify-between flex-col sm:flex-row">
