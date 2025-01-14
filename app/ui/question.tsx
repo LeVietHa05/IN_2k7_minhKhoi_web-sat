@@ -20,15 +20,15 @@ const Question: React.FC<QuestionProps> = ({
   questionIndex,
 }) => {
   return (
-    <div className="border rounded  bg-gray-50 flex">
-      <div className="ml-4 mr-8 mt-4 shadow-md w-[38px] h-[38px] rounded-full flex justify-center items-center bg-white">
+    <div className="border rounded  bg-gray-50 flex ">
+      <div className="ml-4  mt-4 shadow-md w-[38px] h-[38px] rounded-full flex justify-center items-center bg-white">
         {questionIndex + 1}
       </div>
       <Image
         src={imageUrl}
         alt="Question"
-        className="mb-4 mr-[26px]"
-        width={510}
+        className="mb-4 mr-[26px] flex-1"
+        width={520}
         height={350}
       />
       <div className="border-l-2 border-dashed bg-indigo-50 flex flex-col justify-center items-center gap-5 p-6">

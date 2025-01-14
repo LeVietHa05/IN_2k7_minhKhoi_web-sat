@@ -498,6 +498,11 @@ export default function Test() {
   );
   const [isSummited, setSummited] = useState(false);
   const [activeQuiz, setActiveQuiz] = useState("quiz1");
+  const [thube, setThube] = useState(false);
+
+  const handleThube = () => {
+    setThube(!thube);
+  };
 
   const handleSelectAnswer2 = (questionIndex: number, answerIndex: number) => {
     const newquiz2Answer = [...quiz2Answer];
@@ -544,15 +549,27 @@ export default function Test() {
 
   return (
     <div className="px-20 pt-20 min-h-screen flex text-gray-700">
-      <div className="w-[480px]">
-        <div className="flex gap-5 items-center px-2 py-6">
+      <div
+        className={` ${
+          thube ? "w-1/5" : "w-[420px]"
+        } transition-all duration-300`}>
+        <div className=" flex gap-5 items-center px-2 py-6">
           <div>Sat Test</div>
-          <div className="w-0.5 h-8 bg-gray-300"></div>
-          <div className="flex justify-center items-center gap-2">
+          <div
+            className={`w-0.5 h-8 bg-gray-300 ${
+              thube ? "hidden" : "block"
+            }`}></div>
+          <div
+            className={`flex justify-center items-center gap-2 ${
+              thube ? "hidden" : "block"
+            }`}>
             <Image src={"/clock.svg"} width={32} height={32} alt=""></Image>
             <div>1 hour</div>
           </div>
-          <div className="flex justify-center items-center gap-2">
+          <div
+            className={`flex justify-center items-center gap-2 ${
+              thube ? "hidden" : "block"
+            }`}>
             <Image
               src={"/document-text.svg"}
               width={32}
@@ -560,9 +577,19 @@ export default function Test() {
               alt=""></Image>
             <div>2 sections</div>
           </div>
+          <div onClick={handleThube}>
+            <div>
+              <Image
+                src={`${thube ? "/expand.svg" : "/collapse.svg"}`}
+                width={24}
+                height={24}
+                alt="icon collapse"
+                className="stroke-gray-700 text-black hover:cursor-pointer"></Image>
+            </div>
+          </div>
         </div>
         <hr />
-        <div>
+        <div className="w-[420px] overflow-x-auto">
           <div className="text-gray-500 font-medium text-base my-3">
             Tip: Stay focused and manage your time wisely. You can review your
             answers before submitting.
@@ -631,7 +658,7 @@ export default function Test() {
           </div>
         </div>
       </div>
-      <div>
+      <div className={`${thube ? "w-4/5" : "w-auto"} shadow-lg`}>
         <div className="overflow-y-auto max-h-[70vh]">
           {activeQuiz === "quiz1" &&
             questions1.map((question, index) => {
