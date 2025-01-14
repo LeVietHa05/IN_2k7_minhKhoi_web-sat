@@ -143,9 +143,9 @@ export default function Home() {
               Quality Commitment
             </h1>
             <div className="text-gray-500 text-xl leading-[30px] ">
-              Designed by top SAT experts, we are committed to providing an
-              engaging, effective, and tailored learning experience. Make SAT
-              preparation an opportunity, not a challenge!
+              Designed by Minh Khoi, we are committed to providing an engaging,
+              effective, and tailored learning experience. Make SAT preparation
+              an opportunity, not a challenge!
             </div>
           </div>
           <div className="shink-0 pr-10">
@@ -187,7 +187,7 @@ export default function Home() {
       <hr />
       <div className="mt-10">
         <h1 className="text-indigo-500 text-[40px] font-semibold">
-          People love SAT<span className="text-indigo-700">Buddy</span> like you
+          People love SAT<span className="text-indigo-700">Hub</span> like you
         </h1>
         <div className="flex gap-10 py-5 pb-8">
           {someonelikeyou.map((someone) => {

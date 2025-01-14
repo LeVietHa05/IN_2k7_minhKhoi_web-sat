@@ -15,7 +15,7 @@ export default function About() {
       </div>
       <div className="px-20 flex justify-between items-center">
         <div className="w-[768px] text-lg ">
-          The SAT is designed to evaluate students&#39 analytical thinking,
+          The SAT is designed to evaluate students&#39; analytical thinking,
           mathematical skills, and reading comprehension. It is often a key
           requirement for admission to colleges and universities in the U.S. and
           many other countries.

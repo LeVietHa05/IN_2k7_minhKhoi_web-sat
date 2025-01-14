@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 interface BooksProps {
   title: string;
   list: {
@@ -26,9 +25,11 @@ export default function Books({ title, list }: BooksProps) {
                 height={item.height}
                 alt={item.imgLink}
               />
-              <div className="group-hover:flex hidden transition-all rounded-lg absolute inset-0 backdrop-blur-sm bg-transparent bg-transparent-dark-30 flex justify-center items-center text-2xl text-gray-50">
-                View
-              </div>
+              <a href={`${item.imgLink.split(".")[0]}.pdf`} download>
+                <div className="group-hover:flex hidden transition-all rounded-lg absolute inset-0 backdrop-blur-sm bg-transparent bg-transparent-dark-30 flex justify-center items-center text-2xl text-gray-50">
+                  View
+                </div>
+              </a>
             </div>
           );
         })}
