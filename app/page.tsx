@@ -185,7 +185,7 @@ export default function Home() {
         </div>
       </div>
       <hr />
-      <div className="mt-10">
+      <div className="mt-10 hidden">
         <h1 className="text-indigo-500 text-[40px] font-semibold">
           People love SAT<span className="text-indigo-700">Hub</span> like you
         </h1>
