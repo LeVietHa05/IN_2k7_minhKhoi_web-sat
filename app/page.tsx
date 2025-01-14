@@ -143,7 +143,7 @@ export default function Home() {
               Quality Commitment
             </h1>
             <div className="text-gray-500 text-xl leading-[30px] ">
-              Designed by Minh Khoi, we are committed to providing an engaging,
+              Designed by Minh Khoi, I am committed to providing an engaging,
               effective, and tailored learning experience. Make SAT preparation
               an opportunity, not a challenge!
             </div>
